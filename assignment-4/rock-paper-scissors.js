@@ -1,7 +1,7 @@
 // Rock Paper Scissors
-let choice = Math.floor(Math.random() * 3)
+let computerPlay = Math.floor(Math.random() * 3)
 
-switch (choice) {
+switch (computerPlay) {
   case 0:
     console.log(`rock`)
     break;
@@ -15,9 +15,30 @@ switch (choice) {
       console.log(`Invalid entry`) 
 }
 
-function game() {
-  let data = { 1: "rock", 2: "paper", 3: "scissors" };
-  let random = Math.random() * (1 - 3) + 1;
-  return data.random;
+function checkWinner(playerSelection, computerSelction) {
+  if(playerSelection === computerSelction) {
+    return `Draw`
+  } else if (
+    (playerSelection === `rock` && computerSelction === `scissors`) ||
+    (playerSelection === `scissors` && computerSelction === `paper`) ||
+    (playerSelection === `paper` && computerSelction === `rock`) 
+  ){
+    return `Player win`
+  } else {
+    return `Computer win!`
+  } 
 }
-console.log(game())
+
+function playRound(playerSelection, computerSelection){
+  const result = checkWinner(playerSelection, computerSelection)
+  if(result === `Draw`){
+    return `It's a Tie`
+  } else if (result === `Player win`){
+    return `Player WINS! ${playerSelection} beats ${computerSelection}`
+  }else {
+    return `You LOSE! ${computerSelection} beats ${playerSelection}`
+  }
+}
+const playerSelection = `paper`
+const computerSelection = computerPlay
+console.log(playRound(playerSelection,computerSelection))
