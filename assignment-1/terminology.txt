@@ -1,0 +1,72 @@
+1. Name the three ways to declare a variable?
+  ANSWER:
+2. Which of the three variable declarations should you avoid and why?
+  ANSWER:
+3. What rules should you follow when naming variables?
+  ANSWER:
+4. What should you look out for when using the + operator with numbers and strings?
+  ANSWER:
+5. How does the % operator work?
+  ANSWER:
+6. Explain the difference between == and ===.
+  ANSWER:
+7. When would you receive a NaN result?
+  ANSWER:
+8. How do you increment and decrement a number?
+  ANSWER:
+9. Explain the difference between prefixing and post-fixing increment/decrement operators.
+  ANSWER:
+10. What is operator precedence and how is it handled in JS?
+  ANSWER:
+11. How do you log information to the console?
+  ANSWER:
+12. What does unary plus operator do to string representations of integers?
+  ANSWER:
+13. What are the eight data types in JavaScript?
+  ANSWER:
+14. Which data type is NOT primitive?
+  ANSWER:
+15. What is the relationship between null and undefined?
+  ANSWER:
+16. What is the difference between single, double, and backtick quotes for strings?
+  ANSWER:
+17. What is the term for embedding variables/expressions in a string?
+  ANSWER:
+18. Which type of quote lets you embed variables/expressions in a string?
+  ANSWER:
+19. How do you embed variables/expressions in a string?
+  ANSWER:
+20. How do you escape characters in a string?
+  ANSWER:
+21. What is the difference between the slice/substring/substr string methods?
+  ANSWER:
+22. What are the three logical operators and what do they stand for?
+  ANSWER:
+23. What are the comparison operators?
+  ANSWER:
+24. What are truthy and falsy values?
+  ANSWER:
+25. What are the falsy values in JavaScript?
+  ANSWER:
+26. What are conditionals?
+  ANSWER:
+27. What is the syntax for an if/else conditional?
+  ANSWER:
+28. What is the syntax for a switch statement?
+  ANSWER:
+29. What is the syntax for a ternary operator?
+  ANSWER:
+30. What is nesting?
+  ANSWER:
+31. What are functions useful for?
+  ANSWER:
+32. How do you invoke a function?
+  ANSWER:
+33. What are anonymous functions?
+  ANSWER:
+34. What is function scope?
+  ANSWER:
+35. What are return values?
+  ANSWER:
+36. What are arrow functions?
+  ANSWER:
