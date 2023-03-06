@@ -1,72 +1,76 @@
 1. Name the three ways to declare a variable?
-  ANSWER:
+  ANSWER: var, let and const.
 2. Which of the three variable declarations should you avoid and why?
-  ANSWER:
+  ANSWER: var, beacuse it is out dated.
 3. What rules should you follow when naming variables?
-  ANSWER:
+  ANSWER: always have clear and descriptive names.
 4. What should you look out for when using the + operator with numbers and strings?
-  ANSWER:
+  ANSWER: not to convert the numbers to strings
 5. How does the % operator work?
-  ANSWER:
+  ANSWER: % gives us the remander of a number
 6. Explain the difference between == and ===.
-  ANSWER:
+  ANSWER:  == is equality operatnd and === strict quality operand 
 7. When would you receive a NaN result?
-  ANSWER:
+  ANSWER: "number" * 3 =
 8. How do you increment and decrement a number?
-  ANSWER:
+  ANSWER: 1++  or 1--
 9. Explain the difference between prefixing and post-fixing increment/decrement operators.
-  ANSWER:
+  ANSWER:  Postfix returns the original value of the variable, before the increment/decrement. Prefix returns the value after the increment/decrement.
 10. What is operator precedence and how is it handled in JS?
-  ANSWER:
+  ANSWER: Multiplication ( * ) and division ( / ) have higher precedence than addition ( + ) and subtraction ( - )
 11. How do you log information to the console?
-  ANSWER:
+  ANSWER: console.log("Hello world")
 12. What does unary plus operator do to string representations of integers?
-  ANSWER:
+  ANSWER: It can convert string representations of integers and floats, as well as the non-string values true , false , and null.
 13. What are the eight data types in JavaScript?
-  ANSWER:
+  ANSWER: Strings, numbers, obgjects, boolean, array, undefined, null, symbol.
 14. Which data type is NOT primitive?
-  ANSWER:
+  ANSWER: objects, array
 15. What is the relationship between null and undefined?
-  ANSWER:
+  ANSWER: there is no relationship.Undefined means the variable has been declared, but its value has not been assigned. Null means an empty value or blank value.
 16. What is the difference between single, double, and backtick quotes for strings?
-  ANSWER:
+  ANSWER: nothing is the difference between.
 17. What is the term for embedding variables/expressions in a string?
-  ANSWER:
+  ANSWER: usinf template literals.
 18. Which type of quote lets you embed variables/expressions in a string?
-  ANSWER:
+  ANSWER: backtick quotes
 19. How do you embed variables/expressions in a string?
-  ANSWER:
+  ANSWER: ${ variable goes here}
 20. How do you escape characters in a string?
-  ANSWER:
+  ANSWER: by using \
 21. What is the difference between the slice/substring/substr string methods?
-  ANSWER:
+  ANSWER: slice() extracts parts of a string and returns the extracted parts in a new string. 
+  substr() extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters.(NOT IN USE ANYMORE)
+  substring() extracts parts of a string and returns the extracted parts in a new string.
 22. What are the three logical operators and what do they stand for?
-  ANSWER:
+  ANSWER: || (OR), && (AND), ! (NOT).
 23. What are the comparison operators?
-  ANSWER:
+  ANSWER: < > <= >= == === != !==
 24. What are truthy and falsy values?
-  ANSWER:
+  ANSWER: Truthy values are values that evaluate to True in a boolean context. Falsy values are values that evaluate to False in a boolean context.
 25. What are the falsy values in JavaScript?
-  ANSWER:
+  ANSWER: undefined , null , NaN , 0 , "" (empty string), and false
 26. What are conditionals?
-  ANSWER:
+  ANSWER: control behavior in JavaScript and determine whether or not pieces of code can run.
 27. What is the syntax for an if/else conditional?
-  ANSWER:
+  ANSWER:if(conditional){code block} else if(conditional){code block} else{code block}
 28. What is the syntax for a switch statement?
-  ANSWER:
+  ANSWER: switch( expression ) { case value-1: Block-1; Break; case value-2: Block-2; Break;} statment-X
 29. What is the syntax for a ternary operator?
-  ANSWER:
+  ANSWER: num1 === num2 (?)(&&)(||)
 30. What is nesting?
-  ANSWER:
+  ANSWER:<div class="main">
+            <div class="Nested div"></div>
+         </div>   
 31. What are functions useful for?
-  ANSWER:
+  ANSWER: to create reusables blocks of code
 32. How do you invoke a function?
-  ANSWER:
+  ANSWER: functionName()
 33. What are anonymous functions?
-  ANSWER:
+  ANSWER: functions with out a name: function(){}
 34. What is function scope?
-  ANSWER:
+  ANSWER: variables creatyed within afunction can only be called or used within that function code block
 35. What are return values?
-  ANSWER:
+  ANSWER: return values are the calue returned to use after a block of code has run or the out put of a spacific code instruction
 36. What are arrow functions?
-  ANSWER:
+  ANSWER: arrow funcrion are functions that are the same as normal funcrions just writen with les code and specific syntax
