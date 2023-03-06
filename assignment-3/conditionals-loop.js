@@ -1,6 +1,7 @@
 //  a) Write a JavaScript program that accepts two integers and displays the larger of the two.
 const num1 = 1
 const num2 = 2
+
 if (num1 > num2) {
     console.log(num2)
       } else {
