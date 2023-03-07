@@ -73,4 +73,5 @@
 35. What are return values?
   ANSWER: return values are the calue returned to use after a block of code has run or the out put of a spacific code instruction
 36. What are arrow functions?
-  ANSWER: arrow funcrion are functions that are the same as normal funcrions just writen with les code and specific syntax
+  ANSWER: arrow funcrion are functions that are the same as normal funcrions just writen with les code and specific syntax.
+  
