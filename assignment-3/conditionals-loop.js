@@ -7,8 +7,8 @@ if (num1 > num2) {
       } else {
         console.log(num1)
       }
+      
 //  b) Write a JavaScript program that checks whether an integer is an even or an odd number.
-
 const int = 7
 
 if (int % 2 === 0) {
