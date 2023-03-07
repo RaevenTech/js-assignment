@@ -1,22 +1,6 @@
-// Rock Paper Scissors
-//let computerPlay = Math.floor(Math.random() * 3)
-
-//switch (computerPlay) {
-//  case 0:
-//    console.log(`rock`)
-//    break;
-//  case 1:
-//    console.log(`paper`)
-//    break;
-//  case 2:
-//  console.log(`scissors`)
-//    break;   
-//  default:
-//      console.log(`Invalid entry`) 
-//}
 
 function computerPlay (val){
-  let choice =""
+  let choice =``
 switch (val) {
   case 0:
     choice = `rock`
@@ -30,13 +14,9 @@ switch (val) {
     choice = `scissors`
   console.log(`scissors`)
     break;   
-  default:
-      console.log(`Invalid entry`) 
   }
   return choice
 }
-
-
 
 function checkWinner(playerSelection, computerSelction) {
   if(playerSelection === computerSelction) {
@@ -62,6 +42,8 @@ function playRound(playerSelection, computerSelection){
     return `You LOSE! ${computerSelection} beats ${playerSelection}`
   }
 }
-const playerSelection = `paper`
-const computerSelection = computerPlay(Math.floor(Math.random() * 3))
-console.log(playRound(playerSelection,computerSelection))
+
+//const playerSelection = `paper`
+//const computerSelection = computerPlay(Math.floor(Math.random() * 3))
+//console.log(playRound(playerSelection,computerSelection))
+
