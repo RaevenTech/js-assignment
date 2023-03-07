@@ -43,7 +43,28 @@ function playRound(playerSelection, computerSelection){
   }
 }
 
-//const playerSelection = `paper`
-//const computerSelection = computerPlay(Math.floor(Math.random() * 3))
-//console.log(playRound(playerSelection,computerSelection))
+function playerChoice (){
+  let playerInput = false
+  while (playerInput == false) {
+    let myChoice = prompt(`Enter Rock, Paper or Scissors`)
+    if (myChoice == null){
+      continue
+    }
+    const playerChoiceInLoweCase = myChoice.toLowerCase()
+    if (myChoice.includes(playerChoiceInLoweCase)){
+      playerInput = true
+      return playerChoiceInLoweCase
+    }
+  }
+}
+prompt(playerChoice())
+function game() {
+  console.log(`Let's play Rock, Paper, Scissors,`)
+  for ( let i = 0; i < 5; i++) {
+      const playerSelection = `paper`
+      const computerSelection = computerPlay(Math.floor(Math.random() * 3))
+      console.log(playRound(playerSelection,computerSelection))
+  }
+}
+game()
 
