@@ -1,18 +1,18 @@
 
-function computerPlay (val){
+function computerPlay (value){
   let choice =``
-switch (val) {
+switch (value) {
   case 0:
     choice = `rock`
-    console.log(`rock`)
+    console.log(`Computer plays: rock`)
     break;
   case 1:
     choice = `paper`
-    console.log(`paper`)
+    console.log(`Computer plays: paper`)
     break;
   case 2:
     choice = `scissors`
-  console.log(`scissors`)
+  console.log(`Computer plays: scissors`)
     break;   
   }
   return choice
@@ -28,7 +28,7 @@ function checkWinner(playerSelection, computerSelction) {
   ){
     return `Player win`
   } else {
-    return `Computer win!`
+    return `Computer win`
   } 
 }
 
@@ -46,25 +46,44 @@ function playRound(playerSelection, computerSelection){
 function playerChoice (){
   let playerInput = false
   while (playerInput == false) {
-    let myChoice = prompt(`Enter Rock, Paper or Scissors`)
+    let myChoice = prompt(`Play Rock, Paper or Scissors`)
     if (myChoice == null){
       continue
     }
-    const playerChoiceInLoweCase = myChoice.toLowerCase()
-    if (myChoice.includes(playerChoiceInLoweCase)){
+    const playerChoiceInLowerCase = myChoice.toLowerCase()
+    if (myChoice.includes(playerChoiceInLowerCase)){
       playerInput = true
-      return playerChoiceInLoweCase
+      return playerChoiceInLowerCase
     }
   }
 }
-prompt(playerChoice())
+
+let playerScore = 1
+let computerScore = 1
+
 function game() {
   console.log(`Let's play Rock, Paper, Scissors,`)
+  console.log(`----------------------------------`)
   for ( let i = 0; i < 5; i++) {
-      const playerSelection = `paper`
+      const playerSelection = playerChoice()
       const computerSelection = computerPlay(Math.floor(Math.random() * 3))
       console.log(playRound(playerSelection,computerSelection))
+      if(checkWinner(playerSelection, computerSelection) == `Player win`){
+          console.log(`Player: ${playerScore++}`)
+      }else if(checkWinner(playerSelection, computerSelection) == `Computer win`){
+          console.log(`Computer: ${computerScore++}`)
+      }
+      console.log(`----- NEXT ROUND -----`)
   }
+  console.log(`ROUND OVER`)
+  if(playerScore > computerScore) {
+    console.log(`Player you won. Player: ${playerScore} beat Computer: ${computerScore}`)
+  }else if(playerScore < computerScore) {
+    console.log(`Computer wins. Player: ${playerScore} beat Computer: ${computerScore}`)
+  }else {
+    console.log(`We have a tie. Player: ${playerScore} and Computer: ${computerScore}`)
+  }
+  console.log(`GAME OVER`)
 }
 game()
 
