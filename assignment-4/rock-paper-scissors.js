@@ -63,7 +63,7 @@ let computerScore = 1
 
 function game() {
   console.log(`Let's play Rock, Paper, Scissors,`)
-  console.log(`----------------------------------`)
+  console.log(`-------------------------------`)
   for ( let i = 0; i < 5; i++) {
       const playerSelection = playerChoice()
       const computerSelection = computerPlay(Math.floor(Math.random() * 3))
