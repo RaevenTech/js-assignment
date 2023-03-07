@@ -8,7 +8,8 @@ const sides = (sideA + sideB + sideC)/2
 const area =  Math.sqrt(sides*((sides-sideA)*(sides-sideB)*(sides-sideC)))
 const areaFloor =  Math.floor(Math.sqrt(sides*((sides-sideA)*(sides-sideB)*(sides-sideC))))
 console.log(area)
-console.log(areaFloor)
+console.log(areaFloor) 
+
 //  c. Write a JavaScript program to find the circumference and surface area of a circle whose radius is 4.
 const areaCircle = (4 * 4 * Math.PI) 
 console.log(areaCircle)
