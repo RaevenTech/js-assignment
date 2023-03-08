@@ -1,4 +1,20 @@
+// player selects Rock paper or scisors
+function playerChoice (){
+  let playerInput = false
+  while (playerInput == false) {
+    let playerChoice = prompt(`Play Rock, Paper or Scissors`).toLowerCase()
+    if (playerChoice == null){
+      continue
+    }
+    const playerChoiceInLowerCase = playerChoice
+    if (playerChoice.includes(playerChoiceInLowerCase)){
+      playerInput = true
+      return playerChoiceInLowerCase
+    }
+  }
+}
 
+// computer  randomly selects Rock or Paper or Scissors
 function computerPlay (value){
   let choice =``
 switch (value) {
@@ -18,6 +34,7 @@ switch (value) {
   return choice
 }
 
+// Check who wins buy comparing the two choices
 function checkWinner(playerSelection, computerSelction) {
   if(playerSelection === computerSelction) {
     return `Draw`
@@ -32,10 +49,11 @@ function checkWinner(playerSelection, computerSelction) {
   } 
 }
 
+// outPuts the result of Check winner function and returns the winner
 function playRound(playerSelection, computerSelection){
   const result = checkWinner(playerSelection, computerSelection)
   if(result === `Draw`){
-    return `It's a Tie`
+    return `Player plays: ${playerSelection } a Tie 0 points`
   } else if (result === `Player win`){
     return `Player WINS! ${playerSelection} beats ${computerSelection}`
   }else {
@@ -43,21 +61,9 @@ function playRound(playerSelection, computerSelection){
   }
 }
 
-function playerChoice (){
-  let playerInput = false
-  while (playerInput == false) {
-    let playerChoice = prompt(`Play Rock, Paper or Scissors`).toLowerCase()
-    if (playerChoice == null){
-      continue
-    }
-    const playerChoiceInLowerCase = playerChoice
-    if (playerChoice.includes(playerChoiceInLowerCase)){
-      playerInput = true
-      return playerChoiceInLowerCase
-    }
-  }
-}
 
+ // The game is played and looped through for  5 rounds then diplayes the player game points 
+ // each round and diplays the final score and who won the game
 let playerScore = 1
 let computerScore = 1
 let round = 1
