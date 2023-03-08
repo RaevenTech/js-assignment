@@ -1,4 +1,4 @@
-
+// Generate random value for the computer to play
 function computerPlay (value){
   let choice =``
 switch (value) {
@@ -17,7 +17,7 @@ switch (value) {
   }
   return choice
 }
-
+// function compairs the users choice to the computer and returns the winner
 function checkWinner(playerSelection, computerSelction) {
   if(playerSelection === computerSelction) {
     return `Draw`
@@ -31,7 +31,7 @@ function checkWinner(playerSelection, computerSelction) {
     return `Computer win`
   } 
 }
-
+// function takes in users hand and computers hand returns out result and the slected choices
 function playRound(playerSelection, computerSelection){
   const result = checkWinner(playerSelection, computerSelection)
   if(result === `Draw`){
@@ -60,6 +60,8 @@ function playerChoice (){
 
 let playerScore = 1
 let computerScore = 1
+let round = 1
+
 
 function game() {
   console.log(`Let's play Rock, Paper, Scissors,`)
@@ -69,13 +71,13 @@ function game() {
       const computerSelection = computerPlay(Math.floor(Math.random() * 3))
       console.log(playRound(playerSelection,computerSelection))
       if(checkWinner(playerSelection, computerSelection) == `Player win`){
-          console.log(`Player: ${playerScore++}`)
+        console.log(`Player: ${playerScore++}`)
       }else if(checkWinner(playerSelection, computerSelection) == `Computer win`){
           console.log(`Computer: ${computerScore++}`)
       }
-      console.log(`----- NEXT ROUND -----`)
+      console.log(`----- ROUND: ${round++} OVER -----`)
   }
-  console.log(`ROUND OVER`)
+  console.log(`------ FINAL SCORE ------`)
   if(playerScore > computerScore) {
     console.log(`Player you won. Player: ${playerScore} beat Computer: ${computerScore}`)
   }else if(playerScore < computerScore) {
@@ -83,7 +85,7 @@ function game() {
   }else {
     console.log(`We have a tie. Player: ${playerScore} and Computer: ${computerScore}`)
   }
-  console.log(`GAME OVER`)
+  console.log(`------ GAME OVER ------`)
 }
 game()
 
