@@ -1,4 +1,4 @@
-// Generate random value for the computer to play
+
 function computerPlay (value){
   let choice =``
 switch (value) {
@@ -17,7 +17,7 @@ switch (value) {
   }
   return choice
 }
-// function compairs the users choice to the computer and returns the winner
+
 function checkWinner(playerSelection, computerSelction) {
   if(playerSelection === computerSelction) {
     return `Draw`
@@ -31,7 +31,7 @@ function checkWinner(playerSelection, computerSelction) {
     return `Computer win`
   } 
 }
-// function takes in users hand and computers hand returns out result and the slected choices
+
 function playRound(playerSelection, computerSelection){
   const result = checkWinner(playerSelection, computerSelection)
   if(result === `Draw`){
@@ -61,7 +61,6 @@ function playerChoice (){
 let playerScore = 1
 let computerScore = 1
 let round = 1
-
 
 function game() {
   console.log(`Let's play Rock, Paper, Scissors,`)
