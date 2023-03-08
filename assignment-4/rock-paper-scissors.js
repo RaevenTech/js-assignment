@@ -46,11 +46,11 @@ function playRound(playerSelection, computerSelection){
 function playerChoice (){
   let playerInput = false
   while (playerInput == false) {
-    let playerChoice = prompt(`Play Rock, Paper or Scissors`)
+    let playerChoice = prompt(`Play Rock, Paper or Scissors`).toLowerCase()
     if (playerChoice == null){
       continue
     }
-    const playerChoiceInLowerCase = playerChoice.toLowerCase()
+    const playerChoiceInLowerCase = playerChoice
     if (playerChoice.includes(playerChoiceInLowerCase)){
       playerInput = true
       return playerChoiceInLowerCase
