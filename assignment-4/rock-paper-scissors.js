@@ -46,12 +46,12 @@ function playRound(playerSelection, computerSelection){
 function playerChoice (){
   let playerInput = false
   while (playerInput == false) {
-    let myChoice = prompt(`Play Rock, Paper or Scissors`)
-    if (myChoice == null){
+    let playerChoice = prompt(`Play Rock, Paper or Scissors`)
+    if (playerChoice == null){
       continue
     }
-    const playerChoiceInLowerCase = myChoice.toLowerCase()
-    if (myChoice.includes(playerChoiceInLowerCase)){
+    const playerChoiceInLowerCase = playerChoice.toLowerCase()
+    if (playerChoice.includes(playerChoiceInLowerCase)){
       playerInput = true
       return playerChoiceInLowerCase
     }
@@ -78,9 +78,9 @@ function game() {
   }
   console.log(`------ FINAL SCORE ------`)
   if(playerScore > computerScore) {
-    console.log(`Player you won. Player: ${playerScore} beat Computer: ${computerScore}`)
+    console.log(`Player you won. Player: ${playerScore} vs Computer: ${computerScore}`)
   }else if(playerScore < computerScore) {
-    console.log(`Computer wins. Player: ${playerScore} beat Computer: ${computerScore}`)
+    console.log(`Computer wins. Player: ${playerScore} vs Computer: ${computerScore}`)
   }else {
     console.log(`We have a tie. Player: ${playerScore} and Computer: ${computerScore}`)
   }
