@@ -61,7 +61,6 @@ function playRound(playerSelection, computerSelection){
   }
 }
 
-
  // The game is played and looped through for  5 rounds then diplayes the player game points 
  // each round and diplays the final score and who won the game
 let playerScore = 1
