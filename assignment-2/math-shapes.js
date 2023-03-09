@@ -1,7 +1,6 @@
 //  a. Write a JavaScript program to find the diagonal of a square where the length of each side is 9.
 const sideLength = 9
-function squareDiagonal(side)
-{
+function squareDiagonal(side){
     return Math.sqrt(2) * side;
 }
  const answer = squareDiagonal(sideLength)
